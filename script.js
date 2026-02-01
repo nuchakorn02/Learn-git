@@ -11,7 +11,6 @@ addList.addEventListener('click', addTask());
 // ส่วนเพิ่มรายการ กด Enter ได้
 function addTask() {
     const text = inputList.value;
-
     if(text === "") {
         alert("โปรดกรอกรายการ");
         return;
@@ -59,7 +58,6 @@ function renderTasks() {
                 renderTasks();
             }     
         });
-
         // ส่วนลบรายการ
         btnDelete.addEventListener('click', function() {
             tasks.splice(index, 1);
